@@ -3,6 +3,6 @@ before_script:
 
 build_image:
   script:
-    - docker build -t csc-alpine .
+    - docker build -t jonnymo5/csc-alpine .
     - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
     - docker push jonnymo5/csc-alpine
